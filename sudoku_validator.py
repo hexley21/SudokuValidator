@@ -19,10 +19,10 @@ def valid_solution(board):
         if {1,2,3,4,5,6,7,8,9} != rows[i]:
             print(f"#{i} row is invalid")
             return False
-        if {1,2,3,4,5,6,7,8,9} != columns[j]: 
+        if {1,2,3,4,5,6,7,8,9} != columns[i]:
             print(f"#{i} column is invalid")
             return False
-        if {1,2,3,4,5,6,7,8,9} != set(blocks[k]):
+        if {1,2,3,4,5,6,7,8,9} != set(blocks[i]):
             print(f"#{i} block is invalid")
             return False
     return True
